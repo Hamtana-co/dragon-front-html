@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./assets/styles/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-white fixed top-0 right-0 left-0 w-full rtl font-[vazir] text-sm font-semibold"
+    >
+      <div
+        class="container mx-auto py-2 lg:border-b-[2px] border-zinc-400 lg:px-24"
+      >
+        <nav class="hidden lg:flex justify-between items-center">
+          <div class="flex items-center gap-9">
+            <div class="">
+              <img src="./assets/images/logo.png" class="w-20 h-20" alt="" />
+            </div>
+            <div>
+              <ul
+                class="flex items-center gap-5 font-[yekan] text-base text-[#2a363bb2]"
+              >
+                <li>سرویس کاهش پینگ</li>
+                <li>تعرفه ها</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-row-reverse items-center gap-2 font-[yekan]">
+            <a
+              href=""
+              class="button-yellow button-icon shadow-sm shadow-[#f0ae2c]"
+            >
+              ورود / ثبت نام
+              <span class="text-white">
+                <img
+                  src="./assets/images/icons/solar--user-bold-duotone.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="rounded-xl px-[18px] py-3 bg-[#5865F2] shadow-sm shadow-[#5865F2] text-white button-icon"
+              >دیسکورد
+
+              <span class="text-white">
+                <img
+                  src="./assets/images/icons/ic--baseline-discord.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="rounded-xl px-[18px] py-3 bg-[#2C6FF0] shadow-sm shadow-[#2C6FF0] text-white button-icon"
+              >تلگرام
+              <span class="icon-[solar--add-square-bold] text-white">
+                <img
+                  src="./assets/images/icons/icon-park-outline--telegram.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="font-[kalameh] text-lg px-[18px] py-[7px] text-[#403E39] border-2 border-[#403E39] rounded-xl button-icon"
+            >
+              07191301921
+              <span
+                class="icon-[solar--add-square-bold] text-white button-icon"
+              >
+                <img
+                  src="./assets/images/icons/solar--phone-calling-bold-duotone (1).svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="px-[18px] py-[9px] text-[#403E39] border-2 border-[#403E39] rounded-xl button-icon"
+              >پشتیبانی
+              <span class="icon-[solar--add-square-bold] text-white">
+                <img
+                  src="./assets/images/icons/solar--headphones-round-bold-duotone (1).svg"
+                  class="w-6 h-6"
+                  alt=""
+                /> </span
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <div
+      class="flex bg-white lg:hidden justify-between items-center shadow-xl fixed top-0 right-0 left-0 w-full rtl py-2 px-4"
+    >
+      <div>
+        <img src="./assets/images/logo.png" class="w-20 h-20" alt="" />
+      </div>
+      <div class="flex flex-row-reverse items-center justify-end gap-2">
+        <a
+          href=""
+          class="rounded-full p-3 bg-[#5865F2] shadow-sm shadow-[#5865F2] text-white button-icon"
+        >
+          <span class="text-white">
+            <img
+              src="./assets/images/icons/ic--baseline-discord.svg"
+              class="w-6 h-6"
+              alt=""
+            />
+          </span>
+        </a>
+        <a
+          href=""
+          class="rounded-full p-3 bg-[#2C6FF0] shadow-sm shadow-[#2C6FF0] text-white button-icon"
+        >
+          <span class="icon-[solar--add-square-bold] text-white">
+            <img
+              src="./assets/images/icons/icon-park-outline--telegram.svg"
+              class="w-6 h-6"
+              alt=""
+            />
+          </span>
+        </a>
+        <a
+          href=""
+          class="p-3 text-[#403E39] border-2 border-[#403E39] rounded-full button-icon"
+        >
+          <span class="icon-[solar--add-square-bold] text-white">
+            <img
+              src="./assets/images/icons/solar--headphones-round-bold-duotone (1).svg"
+              class="w-6 h-6"
+              alt=""
+            /> </span
+        ></a>
+        <a
+          href=""
+          class="font-[kalameh] text-lg px-[18px] py-[7px] text-[#403E39] border-2 border-[#403E39] rounded-xl button-icon"
+        >
+          07191301921
+          <span class="icon-[solar--add-square-bold] text-white button-icon">
+            <img
+              src="./assets/images/icons/solar--phone-calling-bold-duotone (1).svg"
+              class="w-6 h-6"
+              alt=""
+            />
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <main class="w-full rtl mt-24">
+      <!-- Info -->
+      <section class="py-12 flex justify-center items-center w-full">
+        <div class="flex items-center justify-evenly w-full">
+          <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
+            <img src="./assets/images/customers.png" class="w-24" alt="" />
+            <span class="flex">
+              <span>+</span>
+              <h3>1300</h3>
+            </span>
+            <span>مجموع مشتریان</span>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
+            <img src="./assets/images/time.png" class="w-24" alt="" />
+            <span class="flex">
+              <span>+</span>
+              <h3>80</h3>
+            </span>
+            <span>روز از زمان فعالیت</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slider -->
+      <section
+        class="py-12 flex justify-center items-center bg-[#403E39] w-full"
+      ></section>
+
+      <!-- Dragon Call To Action -->
+      <section
+        class="py-12 flex justify-center items-center font-[vazir] container w-full mx-auto px-10 lg:px-24"
+      >
+        <div
+          class="flex flex-col items-center justify-center bg-[#F0AE2C] px-10 lg:px-[150px] py-10 rounded-3xl gap-8"
+        >
+          <h2
+            class="font-[kalameh] text-2xl lg:text-3xl font-black text-[#403E39]"
+          >
+            سرور های اختصاصی دراگون وی پی اس
+          </h2>
+          <p class="text-center text-sm lg:text-base text-[#41403b] leading-8">
+            بعد از استقبال شما از سرویس های دراگون و برای حفظ کیفیت و سرویس دهی
+            به شما کاربران عزیز دراگون تصمیم گرفتیم از بهمن ماه 1402 فروش سرویس
+            های دراگون را بامحدودیت فروش اجرا کنیم و حق تقدم با سرویس های فعال و
+            تمدید سرویس می باشد حفظ کیفیت و رضایت شما کاربران هدف اصلی تیم
+            دراگون است
+          </p>
+          <div
+            class="flex justify-center items-center gap-5 text-[vazir] font-medium"
+          >
+            <a
+              href=""
+              class="button-yellow button-icon bg-[#403E39] text-white"
+            >
+              ویژگی های ما
+              <span class="">
+                <img
+                  src="./assets/images/icons/paste-black.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+
+            <a
+              href=""
+              class="button-yellow button-icon text-[#403E39] font-semibold"
+            >
+              تعرفه ها
+              <span class="">
+                <img
+                  src="./assets/images/icons/price.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Distinction -->
+      <section
+        class="py-12 flex justify-center items-center font-[vazir] container w-full mx-auto px-10 lg:px-24"
+      >
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-8 w-full"
+        >
+          <div class="w-full">
+            <div class="flex justify-start items-center gap-5">
+              <img
+                src="./assets/images/icons/big-card-black.svg"
+                class="w-16 h-16"
+                alt=""
+              />
+              <div class="flex flex-col items-start gap-1">
+                <h5 class="text-base lg:text-lg">گارانتی بازگشت وجه</h5>
+                <span class="text-xs lg:text-sm">تا 3 روز پس از خرید</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex justify-start items-center gap-5">
+              <img
+                src="./assets/images/icons/big-fire-black.svg"
+                class="w-16 h-16"
+                alt=""
+              />
+              <div class="flex flex-col items-start gap-1">
+                <h5 class="text-base lg:text-lg">
+                  تحویل آنی بلافاصله پس از خرید
+                </h5>
+                <span class="text-xs lg:text-sm"
+                  >اطلاعات سرویس در پنل شما فعال میشود</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex justify-start items-center gap-5">
+              <img
+                src="./assets/images/icons/big-headphone-black.svg"
+                class="w-16 h-16"
+                alt=""
+              />
+              <div class="flex flex-col items-start gap-1">
+                <h5 class="text-base lg:text-lg">
+                  پشتیبانی ۲۴ ساعته نصب و راه اندازی
+                </h5>
+                <span class="text-xs lg:text-sm">071-9130-1921</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attributes -->
+      <section
+        class="py-12 flex justify-center items-center bg-[#403E39] w-full"
+      >
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-8 container w-full mx-auto p-10 lg:px-24"
+        >
+          <div
+            class="bg-[#F0AE2C] rounded-3xl w-full flex items-center justify-center"
+          >
+            <div
+              class="flex flex-col justify-center items-center p-5 font-[vazir] gap-3"
+            >
+              <img
+                src="./assets/images/icons/server-bold-black.svg"
+                class="w-24 h-24"
+                alt=""
+              />
+              <h3 class="font-[kalameh] text-3xl font-extrabold text-[#312f2b]">
+                سرورهای مخصوص شما
+              </h3>
+              <p
+                class="text-center text-sm leading-8 text-[#403E39] font-semibold"
+              >
+                دراگون VPS با پیکربندی و بهبود سرورهای فوق العاده مخصوص گیمینگ،
+                تمام دغدغه‌ها و مشکلاتی که سد راه گیمرهای ایرانی است را برداشته
+                و کیفیت فوق‌العاده‌ای را به آنها ارائه می‌دهد. 
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[#F0AE2C] rounded-3xl w-full flex items-center justify-center"
+          >
+            <div
+              class="flex flex-col justify-center items-center p-5 font-[vazir] gap-3"
+            >
+              <img
+                src="./assets/images/icons/server-bold-black.svg"
+                class="w-24 h-24"
+                alt=""
+              />
+              <h3 class="font-[kalameh] text-3xl font-extrabold text-[#312f2b]">
+                پشتیبانی از 100% بازی‌ها
+              </h3>
+              <p
+                class="text-center text-sm leading-8 text-[#403E39] font-semibold"
+              >
+                اصلی‌ترین بازی‌هایی که عموما کاربران ایرانی بازی می‌کنند با
+                سرورهای DragonVPS قابل اجرا هستند. از جمله بازی های دوتا، فیفا،
+                فورت نایت، پابجی و…
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[#F0AE2C] rounded-3xl w-full flex items-center justify-center"
+          >
+            <div
+              class="flex flex-col justify-center items-center p-5 font-[vazir] gap-3"
+            >
+              <img
+                src="./assets/images/icons/server-bold-black.svg"
+                class="w-24 h-24"
+                alt=""
+              />
+              <h3 class="font-[kalameh] text-3xl font-extrabold text-[#312f2b]">
+                نرم افزار تخصصی
+              </h3>
+              <p
+                class="text-center text-sm leading-8 text-[#403E39] font-semibold"
+              >
+                دراگون وی پی اس دارای نرم افزار تخصصی و ساخته شده توسط تیم فنی و
+                متخصص دراگون است. کاربران تنها با وارد کردن شماره موبایل
+                می‌توانند وارد نرم افزار شوند.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plans -->
+      <section
+        class="flex justify-between flex-col lg:flex-row w-full gap-12 py-12 container mx-auto px-10 lg:px-24"
+      >
+        <div
+          class="w-full flex-1 mt-8 p-8 order-2 bg-[#403E39] shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1"
+        >
+          <div
+            class="mb-7 pb-7 flex flex-col gap-5 items-center border-b border-gray-300"
+          >
+            <img
+              src="./assets/images/plans/mobile.png"
+              alt=""
+              class="rounded-3xl w-20 h-20"
+            />
+            <div
+              class="flex flex-col gap-3 justify-center items-center text-[#F0AE2C]"
+            >
+              <span class="text-2xl">یک ماهه</span>
+              <span class="text-4xl">169 هزار تومان</span>
+            </div>
+          </div>
+          <ul
+            class="mb-7 font-[vazir] font-normal text-sm lg:text-base text-slate-300 rtl px-3"
+          >
+            <li class="flex mb-2">
+              <img src="./assets/images/icons/arrow-left.svg" />
+              <span class="ml-3"> پهنای باند نامحدود </span>
+            </li>
+            <li class="flex mb-2">
+              <img src="./assets/images/icons/arrow-left.svg" />
+              <span class="ml-3">
+                نرم افزار اختصاصی ویندوز، اندروید و آی او اس
+              </span>
+            </li>
+            <li class="flex">
+              <img src="./assets/images/icons/arrow-left.svg" />
+              <span class="ml-3">پشتیبانی 24/7</span>
+            </li>
+            <li class="flex">
+              <img src="./assets/images/icons/arrow-left.svg" />
+              <span class="ml-3">قابلیت Kill Switch</span>
+            </li>
+          </ul>
+          <a
+            href="#/"
+            class="flex flex-row-reverse hover:bg-transparent hover:text-[#F0AE2C] hover:ring-2 hover:ring-[#F0AE2C] justify-center items-center bg-[#F0AE2C] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
+          >
+            خرید و تحویل آنی
+            <img src="./assets/images/icons/price.svg" class="ml-2" />
+          </a>
+        </div>
+
+        <div
+          class="w-full flex-1 mt-8 p-8 order-2 bg-[#F0AE2C] shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1"
+        >
+          <div
+            class="mb-7 pb-7 flex flex-col gap-5 items-center border-b border-[#403E39]"
+          >
+            <img
+              src="./assets/images/plans/game.png"
+              alt=""
+              class="rounded-3xl w-20 h-20"
+            />
+            <div
+              class="flex flex-col gap-3 justify-center items-center text-[#403E39]"
+            >
+              <span class="text-2xl">یک ماهه</span>
+              <span class="text-4xl">169 هزار تومان</span>
+            </div>
+          </div>
+          <ul
+            class="mb-7 font-[vazir] font-normal text-sm lg:text-base text-[#2C2822] rtl px-3"
+          >
+            <li class="flex mb-2">
+              <img src="./assets/images/icons/arrow-left-black.svg" />
+              <span class="ml-3"> پهنای باند نامحدود </span>
+            </li>
+            <li class="flex mb-2">
+              <img src="./assets/images/icons/arrow-left-black.svg" />
+              <span class="ml-3">
+                نرم افزار اختصاصی ویندوز، اندروید و آی او اس
+              </span>
+            </li>
+            <li class="flex">
+              <img src="./assets/images/icons/arrow-left-black.svg" />
+              <span class="ml-3">پشتیبانی 24/7</span>
+            </li>
+            <li class="flex">
+              <img src="./assets/images/icons/arrow-left-black.svg" />
+              <span class="ml-3">قابلیت Kill Switch</span>
+            </li>
+          </ul>
+          <a
+            href="#/"
+            class="flex flex-row-reverse justify-center items-center bg-[#403E39] hover:bg-transparent hover:text-[#403E39] hover:ring-2 hover:ring-[#403E39] rounded-xl py-5 px-4 text-center text-white text-xl"
+          >
+            خرید و تحویل آنی
+            <img src="./assets/images/icons/price-gold.svg" class="ml-2" />
+          </a>
+        </div>
+
+        <div
+          class="w-full flex-1 mt-8 p-8 order-2 bg-[#403E39] shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1"
+        >
+          <div
+            class="mb-7 pb-7 flex flex-col gap-5 items-center border-b border-gray-300"
+          >
+            <img
+              src="./assets/images/plans/vip.png"
+              alt=""
+              class="rounded-3xl w-20 h-20"
+            />
+            <div
+              class="flex flex-col gap-3 justify-between items-center text-[#F0AE2C]"
+            >
+              <span class="text-2xl pb-12">یک ماهه</span>
+            </div>
+          </div>
+          <p class="py-14 text-4xl text-[#F0AE2C] font-bold text-center">
+            به زودی
+          </p>
+          <a
+            href="#/"
+            class="flex flex-row-reverse justify-center items-center bg-[#F0AE2C] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
+          >
+            به زودی
+            <img src="./assets/images/icons/price.svg" class="ml-2" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#403E39] w-full py-6">
+      <div
+        class="container w-full mx-auto flex justify-between items-start flex-row-reverse gap-5 lg:px-24"
+      >
+        <div class="w-full flex flex-col gap-5 justify-start items-end">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">درباره ما</h3>
+            <img src="./assets/images/icons/bookmarksvg.svg" alt="" />
+          </div>
+          <img
+            src="./assets/images/logo.png"
+            class="w-24 h-24"
+            alt="dragon-vps"
+          />
+          <p class="text-right">
+            ما بر این عقیده هستیم که شهرت به تنهایی کافی نیست بلکه ارائه خدمات
+            با کیفیت و پشتیبانی کامل از محصولاتمان میتواند رضایت شما را جلب کند
+            و این مهمترین فاکتور در مجموعه دراگون VPS است.
+          </p>
+        </div>
+        <div class="w-full">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">ارتباط با ما</h3>
+            <img src="./assets/images/icons/phone-footer.svg" alt="" />
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">دسترسی سریع</h3>
+            <img
+              src="./assets/images/icons/solar--login-3-bold-duotone.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full flex flex-col gap-14">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">نماد اعتماد</h3>
+            <img src="./assets/images/icons/verified.svg" alt="" />
+          </div>
+          <img class="w-40" src="./assets/images/enamad.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav -->
+    <div class="block lg:hidden fixed bottom-3 left-3 right-3">
+      <div class="px-7 bg-white shadow-xl rounded-2xl">
+        <div class="flex">
+          <div class="flex-1 group">
+            <a
+              href="#"
+              class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-400 group-hover:text-[#F0AE2C]"
+            >
+              <span
+                class="flex flex-col items-center justify-center px-1 pt-1 pb-1"
+              >
+                <i
+                  class="bi bi-person-fill text-2xl pt-1 mb-1 hover:text-[#F0AE2C]"
+                ></i>
+                <span class="block text-xs font-[vazir] pb-2">حساب کاربری</span>
+
+                <span
+                  class="block w-5 mx-auto h-1 group-hover:bg-[#F0AE2C] rounded-full"
+                ></span>
+              </span>
+            </a>
+          </div>
+          <div class="flex-1 group">
+            <a
+              href="#"
+              class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-400 group-hover:text-[#F0AE2C]"
+            >
+              <span
+                class="flex flex-col items-center justify-center px-1 pt-1 pb-1"
+              >
+                <i
+                  class="bi bi-house-fill text-2xl pt-1 mb-1 hover:text-[#F0AE2C]"
+                ></i>
+                <span class="block text-xs font-[vazir] pb-2">صفحه اصلی</span>
+                <span
+                  class="block w-5 mx-auto h-1 group-hover:bg-[#F0AE2C] rounded-full"
+                ></span>
+              </span>
+            </a>
+          </div>
+          <div class="flex-1 group">
+            <a
+              href="#"
+              class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-400 group-hover:text-[#F0AE2C]"
+            >
+              <span
+                class="flex flex-col items-center justify-center px-1 pt-1 pb-1"
+              >
+                <i
+                  class="bi bi-hdd-stack-fill text-2xl pt-1 mb-1 hover:text-[#F0AE2C]"
+                ></i>
+                <span class="block text-xs font-[vazir] pb-2"
+                  >سرور های دراگون</span
+                >
+                <span
+                  class="block w-5 mx-auto h-1 group-hover:bg-[#F0AE2C] rounded-full"
+                ></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

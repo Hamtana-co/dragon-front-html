@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "kalameh";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../assets/fonts/kalameh/Kalameh\ Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "yekan";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../assets/fonts/yekan/BYekan.woff") format("woff");
+}
+
+@font-face {
+  font-family: "peyda";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/fonts/peyda/Peyda-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "peyda";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../assets/fonts/peyda/Peyda-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "peyda";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/peyda/Peyda-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/fonts/vazir/Vazir-FD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../assets/fonts/vazir/Vazir-Bold-FD.woff") format("woff");
+}
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/vazir/Vazir-Medium-FD.woff") format("woff");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: kalameh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.shadoww {
+  box-shadow: 0 25px 50px -12px rgb(193 30 30 / 25%);
+}
+
+.button-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-yellow {
+  background-color: #f0ae2c;
+  color: #403e39;
+  padding: 12px 18px;
+  border-radius: 12px;
+}
+
+.boxs-shadow {
+  box-shadow: 0 0 15px 1px #46484d36;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
