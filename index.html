@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>دراگون وی پی اس</title>
     <link href="./assets/styles/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <!-- Header -->
     <header
-      class="bg-white fixed top-0 right-0 left-0 w-full rtl font-[vazir] text-sm font-semibold"
+      class="bg-white fixed top-0 right-0 left-0 w-full rtl font-[vazir] text-sm font-semibold z-50"
     >
       <div
-        class="container mx-auto py-2 lg:border-b-[2px] border-zinc-400 lg:px-24"
+        class="container mx-auto py-2 lg:border-b-[2px] border-zinc-400 lg:px-24 z-50"
       >
         <nav class="hidden lg:flex justify-between items-center">
           <div class="flex items-center gap-9">
@@ -160,33 +166,47 @@
       </div>
     </div>
 
+    <!-- Main -->
     <main class="w-full rtl mt-24">
       <!-- Info -->
       <section class="py-12 flex justify-center items-center w-full">
         <div class="flex items-center justify-evenly w-full">
-          <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
+          <div
+            class="flex flex-col lg:flex-row items-center justify-center gap-2"
+          >
             <img src="./assets/images/customers.png" class="w-24" alt="" />
-            <span class="flex">
-              <span>+</span>
-              <h3>1300</h3>
+            <span class="flex items-center">
+              <span class="lg:text-3xl">+</span>
+              <h3 class="lg:text-3xl">1300</h3>
             </span>
-            <span>مجموع مشتریان</span>
+            <span class="lg:text-sm font-[vazir]">مجموع مشتریان</span>
           </div>
-          <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
+          <div
+            class="flex flex-col lg:flex-row items-center justify-center gap-2"
+          >
             <img src="./assets/images/time.png" class="w-24" alt="" />
             <span class="flex">
-              <span>+</span>
-              <h3>80</h3>
+              <span class="lg:text-3xl">+</span>
+              <h3 class="lg:text-3xl">80</h3>
             </span>
-            <span>روز از زمان فعالیت</span>
+            <span class="lg:text-sm font-[vazir]">روز از زمان فعالیت</span>
           </div>
         </div>
       </section>
 
       <!-- Slider -->
       <section
-        class="py-12 flex justify-center items-center bg-[#403E39] w-full"
-      ></section>
+        class="py- h-[650px] flex flex-col justify-center items-center w-full"
+      >
+      <div class="swiper mySwiper w-full h-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-full"><img class="w-full" src="./assets/images/banner/slide1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </section>
 
       <!-- Dragon Call To Action -->
       <section
@@ -421,7 +441,7 @@
           </ul>
           <a
             href="#/"
-            class="flex flex-row-reverse hover:bg-transparent hover:text-[#F0AE2C] hover:ring-2 hover:ring-[#F0AE2C] justify-center items-center bg-[#F0AE2C] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
+            class="flex flex-row-reverse hover:scale-90 justify-center items-center bg-[#F0AE2C] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
           >
             خرید و تحویل آنی
             <img src="./assets/images/icons/price.svg" class="ml-2" />
@@ -470,7 +490,7 @@
           </ul>
           <a
             href="#/"
-            class="flex flex-row-reverse justify-center items-center bg-[#403E39] hover:bg-transparent hover:text-[#403E39] hover:ring-2 hover:ring-[#403E39] rounded-xl py-5 px-4 text-center text-white text-xl"
+            class="flex flex-row-reverse justify-center items-center bg-[#403E39] hover:scale-90 rounded-xl py-5 px-4 text-center text-white text-xl"
           >
             خرید و تحویل آنی
             <img src="./assets/images/icons/price-gold.svg" class="ml-2" />
@@ -617,5 +637,23 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
