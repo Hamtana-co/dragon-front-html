@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سرور های دراگون</title>
+    <link href="../assets/styles/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="bg-white fixed top-0 right-0 left-0 w-full rtl font-[vazir] text-sm font-semibold"
+    >
+      <div
+        class="container mx-auto py-2 lg:border-b-[2px] border-zinc-400 lg:px-24"
+      >
+        <nav class="hidden lg:flex justify-between items-center">
+          <div class="flex items-center gap-9">
+            <div class="">
+              <img src="../assets/images/logo.png" class="w-20 h-20" alt="" />
+            </div>
+            <div>
+              <ul
+                class="flex items-center gap-5 font-[yekan] text-base text-[#2a363bb2]"
+              >
+                <li>
+                  <a href="">سرویس کاهش پینگ</a>
+                </li>
+                <li>
+                  <a href="">تعرفه ها</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-row-reverse items-center gap-2 font-[yekan]">
+            <a
+              href=""
+              class="button-yellow button-icon shadow-sm shadow-[#f0ae2c]"
+            >
+              ورود / ثبت نام
+              <span class="text-white">
+                <img
+                  src="../assets/images/icons/solar--user-bold-duotone.svg"
+                  class="w-6 rounded-xl h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="rounded-xl px-[18px] py-3 bg-[#5865F2] shadow-sm shadow-[#5865F2] text-white button-icon"
+              >دیسکورد
+
+              <span class="text-white">
+                <img
+                  src="../assets/images/icons/ic--baseline-discord.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="rounded-xl px-[18px] py-3 bg-[#2C6FF0] shadow-sm shadow-[#2C6FF0] text-white button-icon"
+              >تلگرام
+              <span class="icon-[solar--add-square-bold] text-white">
+                <img
+                  src="../assets/images/icons/icon-park-outline--telegram.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="font-[kalameh] text-lg px-[18px] py-[7px] text-[#403E39] border-2 border-[#403E39] rounded-xl button-icon"
+            >
+              07191301921
+              <span
+                class="icon-[solar--add-square-bold] text-white button-icon"
+              >
+                <img
+                  src="../assets/images/icons/solar--phone-calling-bold-duotone (1).svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+              </span>
+            </a>
+            <a
+              href=""
+              class="px-[18px] py-[9px] text-[#403E39] border-2 border-[#403E39] rounded-xl button-icon"
+              >پشتیبانی
+              <span class="icon-[solar--add-square-bold] text-white">
+                <img
+                  src="../assets/images/icons/solar--headphones-round-bold-duotone (1).svg"
+                  class="w-6 h-6"
+                  alt=""
+                /> </span
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <div
+      class="flex bg-white lg:hidden justify-between items-center shadow-xl fixed top-0 right-0 left-0 w-full rtl py-2 px-4"
+    >
+      <div>
+        <img src="../assets/images/logo.png" class="w-20 h-20" alt="" />
+      </div>
+      <div class="flex flex-row-reverse items-center justify-end gap-2">
+        <a
+          href=""
+          class="rounded-full p-2 lg:p-3 bg-[#5865F2] shadow-sm shadow-[#5865F2] text-white button-icon"
+        >
+          <span class="text-white">
+            <img
+              src="../assets/images/icons/ic--baseline-discord.svg"
+              class="w-6 h-6 min-w-fit"
+              alt=""
+            />
+          </span>
+        </a>
+        <a
+          href=""
+          class="rounded-full p-2 lg:p-3 bg-[#2C6FF0] shadow-sm shadow-[#2C6FF0] text-white button-icon"
+        >
+          <span class="icon-[solar--add-square-bold] text-white">
+            <img
+              src="../assets/images/icons/icon-park-outline--telegram.svg"
+              class="w-6 h-6 min-w-fit"
+              alt=""
+            />
+          </span>
+        </a>
+        <a
+          href=""
+          class="p-2 lg:p-3 text-[#403E39] border-2 border-[#403E39] rounded-full button-icon"
+        >
+          <span class="icon-[solar--add-square-bold] text-white">
+            <img
+              src="../assets/images/icons/solar--headphones-round-bold-duotone (1).svg"
+              class="w-6 h-6 min-w-fit"
+              alt=""
+            /> </span
+        ></a>
+        <a
+          href=""
+          class="font-[kalameh] text-base lg:text-lg p-2 lg:px-[18px] lg:py-[7px] text-[#403E39] border-2 border-[#403E39] rounded-xl button-icon"
+        >
+          07191301921
+          <span class="icon-[solar--add-square-bold] text-white button-icon">
+            <img
+              src="../assets/images/icons/solar--phone-calling-bold-duotone (1).svg"
+              class="w-6 h-6 min-w-fit"
+              alt=""
+            />
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main class="w-full rtl my-24 rtl container mx-auto">
+      <div class="flex flex-col justify-center items-center">
+        <h1
+          class="text-center my-24 text-5xl font-bold bg-[#403E39] text-[#F0AE2C] min-w-fit max-w-8 p-3 rounded-xl"
+        >
+          سرور های دراگون
+        </h1>
+        <div class="flex justify-center gap-12 w-full">
+          <div
+            class="bg-white shadowcard w-full p-5 flex flex-col justify-center items-center gap-3 rounded-xl"
+          >
+            <img src="../assets/images/plans/mobile.png" class="w-24" alt="" />
+            <h5 class="text-xl">سرور مخصوص</h5>
+            <h2 class="text-3xl">موبایلی و وبگردی</h2>
+            <div class="flex gap-2 items-center">
+              <span class="text-lg">ماهیانه</span>
+              <span class="text-5xl text-[#F0AE2C]">169</span>
+              <span class="text-lg">هزار تومان</span>
+            </div>
+            <p class="text-center text-sm font-[vazir] py-3 px-12">
+              مخصوص بازی به راحتی با یک کلیگ قابل استفاده و امن با IP اختصاصی ,
+              سرعت بالا و راحتی در استفاده بر روی گوشی موبایل اندروید, ایفون ,
+              کامپیوتر
+            </p>
+            <button
+              class="bg-[#403E39] text-[#F0AE2C] rounded-lg px-4 py-3 text-base"
+            >
+              نمایش سرور ها
+            </button>
+          </div>
+          <div
+            class="bg-white shadowcard w-full p-5 flex flex-col justify-center items-center gap-3 rounded-xl"
+          >
+            <img src="../assets/images/plans/game.png" class="w-24" alt="" />
+            <h5 class="text-xl">مناسب بازی های ویندوزی</h5>
+            <h2 class="text-3xl">سرور مخصوص بازی های ویندوز و موبایل</h2>
+            <div class="flex gap-2 items-center">
+              <span class="text-lg">ماهیانه</span>
+              <span class="text-5xl text-[#F0AE2C]">169</span>
+              <span class="text-lg">هزار تومان</span>
+            </div>
+            <p class="text-center text-sm font-[vazir] py-3 px-12">
+              حفاظت از حریم خصوصی آنلاین خود و ارتقاء سرعت اتصال خود در حین بازی
+              ها با سرویس های امن دراگون
+            </p>
+            <button
+              class="bg-[#403E39] text-[#F0AE2C] rounded-lg px-4 py-3 text-base"
+            >
+              نمایش سرور ها
+            </button>
+          </div>
+          <div
+            class="bg-white shadowcard w-full p-5 flex flex-col justify-center items-center gap-3 rounded-xl"
+          >
+            <img src="../assets/images/plans/vip.png" class="w-24" alt="" />
+            <h5 class="text-xl">منابع اختصاصی</h5>
+
+            <h2 class="text-3xl">سرور VIP</h2>
+            <p class="text-center text-[#F0AE2C] text-4xl py-10 px-12">
+              به زودی
+            </p>
+            <button
+              class="bg-[#403E39] text-[#F0AE2C] rounded-lg px-4 py-3 text-base"
+            >
+              به زودی ...
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full pt-10">
+        <div class="flex items-center gap-2 py-2 border-b-2">
+          <img src="../assets/images/plans/mobile.png" class="w-24" alt="" />
+
+          <div class="flex flex-col justify-start items-start">
+            <h2 class="text-3xl">موبایلی و وبگردی</h2>
+            <p class="text-base font-medium font-[peyda] leading-10">
+              مناسب برای موبایل و وب گردی به راحتی با یک کلیک قابل استفاده و امن
+              با سرعت بالا و راحتی در استفاده بر روی گوشی موبایل اندروید, آیفون
+              و کامپیوتر
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="text-base font-medium px-5 font-[peyda] leading-10">
+            این سرویس مناسب استفاده موبایلی میباشد برای وبگردی مناسب است با این
+            سرویس شما به راحتی از تمام سوشیال مدیا های بین المللی میتوانید
+            استفاده کنید و نیاز شما را برای دسترسی به وبسایت ها تامین میشد حد
+            مصرف این سرویس منصفانه می باشد و در صورت دانلود یا آپلود زیاد سرویس
+            شما محدود میشوداز مزایای دیگر این سرویس بحبود کیفیت اینترنت شما
+            میباشد که کاملا به اینترنت مصرفی شما بستگی دارد که باعث میشود همان
+            سطح اینترنت شما کمی بهبود یافته
+          </p>
+        </div>
+        <div class="flex gap-5 w-full justify-start">
+          <div class="w-full">
+            <div class="w-full py-10">
+              <div class="flex">
+                <div
+                  class="flex-col bg-[#141102ba] ring-4 ring-[#403E39] p-8 block text-[#F0AE2C] rounded-2xl w-full max-w-96"
+                >
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <img
+                        src="../assets/images/plans/mobile.png"
+                        class="w-20"
+                        alt=""
+                      />
+                      <div class="flex gap-2">
+                        <img
+                          src="../assets/images/countries/de.svg"
+                          class="w-14"
+                          alt=""
+                        />
+                        <span class="flex flex-col">
+                          <span>آلمان </span>
+                          <span>Germany </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col py-5 border-b-2 border-[#f0af2c44]"
+                    >
+                      <span>(سرور ارزان )</span>
+                      <span class="flex justify-between">
+                        <h6>مخصوص وب گردی و بازی های موبایلی</h6>
+                        <span>DE-21</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center py-5">
+                    <h5 class="text-xl">نصب بر روی ویندوز ,اندروید و آیفون</h5>
+                    <p class="text-base">
+                      Mac, Linux, Windows, Iphone, Android
+                    </p>
+                  </div>
+                  <div>
+                    <ul
+                      class="text-white font-[peyda] text-sm flex flex-col gap-2 px-2"
+                    >
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i> سیستم عامل
+                        سرور: <span class="pr-1">لینوکس</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>میزان ترافیک:
+                        <span class="pr-1">مصرف منصفانه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>قابلیت<span
+                          class="px-1"
+                          >Kill Switch</span
+                        >دارد
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>مدت زمان تحویل:
+                        <span class="pr-1">در لحظه خرید</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>تعداد اتصال
+                        همزمان: <span class="pr-1"> 1 دستگاه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>قابلیت ریموت دسکتاپ
+                        ندارد
+                      </li>
+
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>دسترسی ترمینال ندارد
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex justify-center items-center pt-5">
+                    <button
+                      type="button"
+                      class="text-[#403E39] bg-[#F0AE2C] hover:bg-[#d19726] focus:ring-4 focus:outline-none w-full focus:ring-[#d19726]/50 font-medium rounded-xl text-base px-4 py-3 text-center inline-flex justify-center items-center me-2 mb-2"
+                    >
+                      <img
+                        src="../assets/images/icons/cart-black.svg"
+                        alt=""
+                        class="pl-2"
+                      />
+                      خرید سرور
+                    </button>
+                  </div>
+                  <!-- <div class="flex gap-3 justify-between items-center py-5">
+                    <span class="flex flex-col items-center">
+                      <span>1 ماهه</span>
+                      <span>169,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>3 ماهه</span>
+                      <span>499,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>6 ماهه</span>
+                      <span>989,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>1 ساله</span>
+                      <span>1,899,000</span>
+                      <span>تومان</span>
+                    </span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="w-full py-10">
+              <div class="flex">
+                <div
+                  class="flex-col bg-[#141102ba] ring-4 ring-[#403E39] p-8 block text-[#F0AE2C] rounded-2xl w-full max-w-96"
+                >
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <img
+                        src="../assets/images/plans/mobile.png"
+                        class="w-20"
+                        alt=""
+                      />
+                      <div class="flex gap-2">
+                        <img
+                          src="../assets/images/countries/de.svg"
+                          class="w-14"
+                          alt=""
+                        />
+                        <span class="flex flex-col">
+                          <span>آلمان </span>
+                          <span>Germany </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col py-5 border-b-2 border-[#f0af2c44]"
+                    >
+                      <span>(سرور ارزان )</span>
+                      <span class="flex justify-between">
+                        <h6>مخصوص وب گردی و بازی های موبایلی</h6>
+                        <span>DE-21</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center py-5">
+                    <h5 class="text-xl">نصب بر روی ویندوز ,اندروید و آیفون</h5>
+                    <p class="text-base">
+                      Mac, Linux, Windows, Iphone, Android
+                    </p>
+                  </div>
+                  <div>
+                    <ul
+                      class="text-white font-[peyda] text-sm flex flex-col gap-2 px-2"
+                    >
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i> سیستم عامل
+                        سرور: <span class="pr-1">لینوکس</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>میزان ترافیک:
+                        <span class="pr-1">مصرف منصفانه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>قابلیت<span
+                          class="px-1"
+                          >Kill Switch</span
+                        >دارد
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>مدت زمان تحویل:
+                        <span class="pr-1">در لحظه خرید</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>تعداد اتصال
+                        همزمان: <span class="pr-1"> 1 دستگاه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>قابلیت ریموت دسکتاپ
+                        ندارد
+                      </li>
+
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>دسترسی ترمینال ندارد
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex justify-center items-center pt-5">
+                    <button
+                      type="button"
+                      class="text-[#403E39] bg-[#F0AE2C] hover:bg-[#d19726] focus:ring-4 focus:outline-none w-full focus:ring-[#d19726]/50 font-medium rounded-xl text-base px-4 py-3 text-center inline-flex justify-center items-center me-2 mb-2"
+                    >
+                      <img
+                        src="../assets/images/icons/cart-black.svg"
+                        alt=""
+                        class="pl-2"
+                      />
+                      خرید سرور
+                    </button>
+                  </div>
+                  <!-- <div class="flex gap-3 justify-between items-center py-5">
+                    <span class="flex flex-col items-center">
+                      <span>1 ماهه</span>
+                      <span>169,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>3 ماهه</span>
+                      <span>499,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>6 ماهه</span>
+                      <span>989,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>1 ساله</span>
+                      <span>1,899,000</span>
+                      <span>تومان</span>
+                    </span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>          <div class="w-full">
+            <div class="w-full py-10">
+              <div class="flex">
+                <div
+                  class="flex-col bg-[#141102ba] ring-4 ring-[#403E39] p-8 block text-[#F0AE2C] rounded-2xl w-full max-w-96"
+                >
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <img
+                        src="../assets/images/plans/mobile.png"
+                        class="w-20"
+                        alt=""
+                      />
+                      <div class="flex gap-2">
+                        <img
+                          src="../assets/images/countries/de.svg"
+                          class="w-14"
+                          alt=""
+                        />
+                        <span class="flex flex-col">
+                          <span>آلمان </span>
+                          <span>Germany </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col py-5 border-b-2 border-[#f0af2c44]"
+                    >
+                      <span>(سرور ارزان )</span>
+                      <span class="flex justify-between">
+                        <h6>مخصوص وب گردی و بازی های موبایلی</h6>
+                        <span>DE-21</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center py-5">
+                    <h5 class="text-xl">نصب بر روی ویندوز ,اندروید و آیفون</h5>
+                    <p class="text-base">
+                      Mac, Linux, Windows, Iphone, Android
+                    </p>
+                  </div>
+                  <div>
+                    <ul
+                      class="text-white font-[peyda] text-sm flex flex-col gap-2 px-2"
+                    >
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i> سیستم عامل
+                        سرور: <span class="pr-1">لینوکس</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>میزان ترافیک:
+                        <span class="pr-1">مصرف منصفانه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>قابلیت<span
+                          class="px-1"
+                          >Kill Switch</span
+                        >دارد
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>مدت زمان تحویل:
+                        <span class="pr-1">در لحظه خرید</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>تعداد اتصال
+                        همزمان: <span class="pr-1"> 1 دستگاه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>قابلیت ریموت دسکتاپ
+                        ندارد
+                      </li>
+
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>دسترسی ترمینال ندارد
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex justify-center items-center pt-5">
+                    <button
+                      type="button"
+                      class="text-[#403E39] bg-[#F0AE2C] hover:bg-[#d19726] focus:ring-4 focus:outline-none w-full focus:ring-[#d19726]/50 font-medium rounded-xl text-base px-4 py-3 text-center inline-flex justify-center items-center me-2 mb-2"
+                    >
+                      <img
+                        src="../assets/images/icons/cart-black.svg"
+                        alt=""
+                        class="pl-2"
+                      />
+                      خرید سرور
+                    </button>
+                  </div>
+                  <!-- <div class="flex gap-3 justify-between items-center py-5">
+                    <span class="flex flex-col items-center">
+                      <span>1 ماهه</span>
+                      <span>169,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>3 ماهه</span>
+                      <span>499,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>6 ماهه</span>
+                      <span>989,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>1 ساله</span>
+                      <span>1,899,000</span>
+                      <span>تومان</span>
+                    </span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>          <div class="w-full">
+            <div class="w-full py-10">
+              <div class="flex">
+                <div
+                  class="flex-col bg-[#141102ba] ring-4 ring-[#403E39] p-8 block text-[#F0AE2C] rounded-2xl w-full max-w-96"
+                >
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <img
+                        src="../assets/images/plans/mobile.png"
+                        class="w-20"
+                        alt=""
+                      />
+                      <div class="flex gap-2">
+                        <img
+                          src="../assets/images/countries/de.svg"
+                          class="w-14"
+                          alt=""
+                        />
+                        <span class="flex flex-col">
+                          <span>آلمان </span>
+                          <span>Germany </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col py-5 border-b-2 border-[#f0af2c44]"
+                    >
+                      <span>(سرور ارزان )</span>
+                      <span class="flex justify-between">
+                        <h6>مخصوص وب گردی و بازی های موبایلی</h6>
+                        <span>DE-21</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center py-5">
+                    <h5 class="text-xl">نصب بر روی ویندوز ,اندروید و آیفون</h5>
+                    <p class="text-base">
+                      Mac, Linux, Windows, Iphone, Android
+                    </p>
+                  </div>
+                  <div>
+                    <ul
+                      class="text-white font-[peyda] text-sm flex flex-col gap-2 px-2"
+                    >
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i> سیستم عامل
+                        سرور: <span class="pr-1">لینوکس</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>میزان ترافیک:
+                        <span class="pr-1">مصرف منصفانه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>قابلیت<span
+                          class="px-1"
+                          >Kill Switch</span
+                        >دارد
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>مدت زمان تحویل:
+                        <span class="pr-1">در لحظه خرید</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-square pl-2"></i>تعداد اتصال
+                        همزمان: <span class="pr-1"> 1 دستگاه</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>قابلیت ریموت دسکتاپ
+                        ندارد
+                      </li>
+
+                      <li>
+                        <i class="bi bi-x-square pl-2"></i>دسترسی ترمینال ندارد
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex justify-center items-center pt-5">
+                    <button
+                      type="button"
+                      class="text-[#403E39] bg-[#F0AE2C] hover:bg-[#d19726] focus:ring-4 focus:outline-none w-full focus:ring-[#d19726]/50 font-medium rounded-xl text-base px-4 py-3 text-center inline-flex justify-center items-center me-2 mb-2"
+                    >
+                      <img
+                        src="../assets/images/icons/cart-black.svg"
+                        alt=""
+                        class="pl-2"
+                      />
+                      خرید سرور
+                    </button>
+                  </div>
+                  <!-- <div class="flex gap-3 justify-between items-center py-5">
+                    <span class="flex flex-col items-center">
+                      <span>1 ماهه</span>
+                      <span>169,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>3 ماهه</span>
+                      <span>499,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>6 ماهه</span>
+                      <span>989,000</span>
+                      <span>تومان</span>
+                    </span>
+                    <span class="flex flex-col items-center">
+                      <span>1 ساله</span>
+                      <span>1,899,000</span>
+                      <span>تومان</span>
+                    </span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#403E39] w-full py-6 rounded-xl">
+      <div
+        class="container w-full mx-auto flex justify-between items-start flex-row-reverse gap-5 lg:px-24"
+      >
+        <div class="w-full flex flex-col gap-5 justify-start items-end">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">درباره ما</h3>
+            <img src="../assets/images/icons/bookmarksvg.svg" alt="" />
+          </div>
+          <img
+            src="../assets/images/logo.png"
+            class="w-24 h-24"
+            alt="dragon-vps"
+          />
+          <p class="text-right">
+            ما بر این عقیده هستیم که شهرت به تنهایی کافی نیست بلکه ارائه خدمات
+            با کیفیت و پشتیبانی کامل از محصولاتمان میتواند رضایت شما را جلب کند
+            و این مهمترین فاکتور در مجموعه دراگون VPS است.
+          </p>
+        </div>
+        <div class="w-full">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">ارتباط با ما</h3>
+            <img src="../assets/images/icons/phone-footer.svg" alt="" />
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">دسترسی سریع</h3>
+            <img
+              src="../assets/images/icons/solar--login-3-bold-duotone.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full flex flex-col gap-14">
+          <div class="flex justify-center items-center gap-2">
+            <h3 class="text-lg text-white">نماد اعتماد</h3>
+            <img src="../assets/images/icons/verified.svg" alt="" />
+          </div>
+          <img class="w-40" src="../assets/images/enamad.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav -->
+    <div class="block lg:hidden fixed bottom-3 left-3 right-3">
+      <div class="px-7 bg-white shadow-xl rounded-2xl">
+        <div class="flex">
+          <div class="flex-1 group">
+            <a
+              href="#"
+              class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-400 group-hover:text-[#F0AE2C]"
+            >
+              <span
+                class="flex flex-col items-center justify-center px-1 pt-1 pb-1"
+              >
+                <i
+                  class="bi bi-person-fill text-2xl pt-1 mb-1 hover:text-[#F0AE2C]"
+                ></i>
+                <span class="block text-xs font-[vazir] pb-2">حساب کاربری</span>
+
+                <span
+                  class="block w-5 mx-auto h-1 group-hover:bg-[#F0AE2C] rounded-full"
+                ></span>
+              </span>
+            </a>
+          </div>
+          <div class="flex-1 group">
+            <a
+              href="#"
+              class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-400 group-hover:text-[#F0AE2C]"
+            >
+              <span
+                class="flex flex-col items-center justify-center px-1 pt-1 pb-1"
+              >
+                <i
+                  class="bi bi-house-fill text-2xl pt-1 mb-1 hover:text-[#F0AE2C]"
+                ></i>
+                <span class="block text-xs font-[vazir] pb-2">صفحه اصلی</span>
+                <span
+                  class="block w-5 mx-auto h-1 group-hover:bg-[#F0AE2C] rounded-full"
+                ></span>
+              </span>
+            </a>
+          </div>
+          <div class="flex-1 group">
+            <a
+              href="#"
+              class="flex items-end justify-center text-center mx-auto px-4 pt-2 w-full text-gray-400 group-hover:text-[#F0AE2C]"
+            >
+              <span
+                class="flex flex-col items-center justify-center px-1 pt-1 pb-1"
+              >
+                <i
+                  class="bi bi-hdd-stack-fill text-2xl pt-1 mb-1 hover:text-[#F0AE2C]"
+                ></i>
+                <span class="block text-xs font-[vazir] pb-2"
+                  >سرور های دراگون</span
+                >
+                <span
+                  class="block w-5 mx-auto h-1 group-hover:bg-[#F0AE2C] rounded-full"
+                ></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

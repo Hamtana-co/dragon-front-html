@@ -72,6 +72,10 @@ body {
   box-shadow: 0 25px 50px -12px rgb(193 30 30 / 25%);
 }
 
+.shadowcard {
+  box-shadow: 0 0 9px 0 rgba(47, 48, 49, 0.178);
+}
+
 .button-icon {
   display: flex;
   flex-direction: row-reverse;
