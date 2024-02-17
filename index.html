@@ -40,7 +40,7 @@
           <div class="flex flex-row-reverse items-center gap-2 font-[yekan]">
             <a
               href=""
-              class="button-yellow button-icon shadow-sm shadow-[#f0ae2c]"
+              class="button-yellow button-icon shadow-sm bg-[#F0AE2C] hover:bg-[#d19726] text-[#403e39]"
             >
               ورود / ثبت نام
               <span class="text-white">
@@ -198,14 +198,20 @@
       <section
         class="py- h-[650px] flex flex-col justify-center items-center w-full"
       >
-      <div class="swiper mySwiper w-full h-full">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide w-full"><img class="w-full" src="./assets/images/banner/slide1.jpg" alt=""></div>
+        <div class="swiper mySwiper w-full h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide w-full">
+              <img
+                class="w-full"
+                src="./assets/images/banner/slide1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
       </section>
 
       <!-- Dragon Call To Action -->
@@ -213,14 +219,22 @@
         class="py-12 flex justify-center items-center font-[vazir] container w-full mx-auto px-10 lg:px-24"
       >
         <div
-          class="flex flex-col items-center justify-center bg-[#F0AE2C] px-10 lg:px-[150px] py-10 rounded-3xl gap-8"
+          class="flex flex-col items-center justify-center bg-[#F0AE2C] px-10 lg:px-[150px] py-10 rounded-3xl gap-5"
         >
-          <h2
-            class="font-[kalameh] text-2xl lg:text-3xl font-black text-[#403E39]"
+          <section class="text-center text-4xl flex items-center gap-3">
+            <i class="bi bi-graph-up-arrow text-[#F0AE2C]"></i>
+            <h2
+              class="flex gap-2 items-center justify-center font-[vazir] font-bold text-[#403E39]"
+            >
+              سرور های اختصاصی<span
+                class="bg-[#403E39] text-[#F0AE2C] p-3 ring-4 ring-[#ffa900] rounded-xl"
+                >دراگون</span
+              >
+            </h2>
+          </section>
+          <p
+            class="text-center text-sm lg:text-lg text-[#41403be0] leading-8 font-bold"
           >
-            سرور های اختصاصی دراگون وی پی اس
-          </h2>
-          <p class="text-center text-sm lg:text-base text-[#41403b] leading-8">
             بعد از استقبال شما از سرویس های دراگون و برای حفظ کیفیت و سرویس دهی
             به شما کاربران عزیز دراگون تصمیم گرفتیم از بهمن ماه 1402 فروش سرویس
             های دراگون را بامحدودیت فروش اجرا کنیم و حق تقدم با سرویس های فعال و
@@ -317,11 +331,20 @@
       </section>
 
       <!-- Attributes -->
+
       <section
-        class="py-12 flex justify-center items-center bg-[#403E39] w-full"
+        class="flex flex-col justify-center items-center bg-[#403E39] w-full"
       >
+        <section class="text-center py-14 text-4xl flex items-center gap-3">
+          <i class="bi bi-graph-up-arrow text-[#F0AE2C]"></i>
+          <h2
+            class="flex gap-2 items-center justify-center font-[vazir] font-bold text-[#F0AE2C]"
+          >
+            ویژگی های<span class="text-[#F0AE2C]">دراگون</span>
+          </h2>
+        </section>
         <div
-          class="flex flex-col lg:flex-row justify-center items-center gap-8 container w-full mx-auto p-10 lg:px-24"
+          class="flex flex-col lg:flex-row justify-center items-center gap-8 container w-full mx-auto pb-10 lg:px-24"
         >
           <div
             class="bg-[#F0AE2C] rounded-3xl w-full flex items-center justify-center"
@@ -396,6 +419,16 @@
       </section>
 
       <!-- Plans -->
+      <section class="text-center pt-16 text-4xl">
+        <h2
+          class="flex gap-2 items-center justify-center font-[vazir] font-bold text-[#403E39]"
+        >
+          پکیج ها و تعرفه های<span
+            class="bg-[#403E39] text-[#F0AE2C] p-3 ring-4 ring-[#ffa900] rounded-xl"
+            >دراگون</span
+          >
+        </h2>
+      </section>
       <section
         class="flex justify-between flex-col lg:flex-row w-full gap-12 py-12 container mx-auto px-10 lg:px-24"
       >
@@ -441,7 +474,7 @@
           </ul>
           <a
             href="#/"
-            class="flex flex-row-reverse hover:scale-90 justify-center items-center bg-[#F0AE2C] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
+            class="flex flex-row-reverse hover:scale-95 justify-center items-center bg-[#F0AE2C] hover:bg-[#d19726] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
           >
             خرید و تحویل آنی
             <img src="./assets/images/icons/price.svg" class="ml-2" />
@@ -490,7 +523,7 @@
           </ul>
           <a
             href="#/"
-            class="flex flex-row-reverse justify-center items-center bg-[#403E39] hover:scale-90 rounded-xl py-5 px-4 text-center text-white text-xl"
+            class="flex flex-row-reverse justify-center items-center bg-[#403E39] hover:scale-95 rounded-xl py-5 px-4 text-center text-white text-xl"
           >
             خرید و تحویل آنی
             <img src="./assets/images/icons/price-gold.svg" class="ml-2" />
@@ -519,57 +552,158 @@
           </p>
           <a
             href="#/"
-            class="flex flex-row-reverse justify-center items-center bg-[#F0AE2C] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
+            class="flex flex-row-reverse justify-center items-center bg-[#d19726] text-[#403E39] rounded-xl py-5 px-4 text-center text-xl"
           >
             به زودی
             <img src="./assets/images/icons/price.svg" class="ml-2" />
           </a>
         </div>
       </section>
+
+      <section
+        class="flex w-full justify-between flex-col lg:flex-row gap-12 py-12"
+      >
+        <div class="bg-[#F0AE2C] w-full py-10">
+          <section class="text-center text-4xl flex justify-center items-center gap-3">
+            <i class="bi bi-graph-up-arrow text-[#F0AE2C]"></i>
+            <h2
+              class="flex gap-2 items-center justify-center font-[vazir] font-bold text-[#403E39]"
+            >
+              بهترین پینگ با<span
+                class="bg-[#403E39] text-[#F0AE2C] p-3 ring-4 ring-[#ffa900] rounded-xl"
+                >دراگون</span
+              >
+            </h2>
+          </section>
+          <h2 class="text-center text-4xl font-[kalameh] font-bold"></h2>
+          <div
+            class="flex container mx-auto w-full justify-between items-center gap-10 h-full py-10"
+          >
+            <div class="w-full flex flex-col h-full justify-between py-7">
+              <p class="leading-10 text-xl text-[#363532]">
+                زمانی که صحبت از سرعت دانلود اینترنت می‌شود، تنها عامل تاثیرگذار
+                پهنای باند سرویس اینترنت است. اما وقتی که صحبت از پینگ و کاهش
+                پینگ بازی می‌شود، قضیه کمی متفاوت است؛ مهم‌ترین عاملی که باعث
+                کاهش پینگ سیستم شما می‌شود، فاصله مکانی و جغرافیایی است. دراگون
+                با بهره‌گیری از روتینگ متنوع از سراسر دنیا باعث می‌شود تا سرویس
+                اینترنت شما تبدیل به نزدیک‌ترین سرویس به سرور بازی شود. جهت
+                آشنایی بیشتر با سرویس‌های دراگون وی پی اس و آموزش کاهش پینگ روی
+                دکمه زیر کلیک کنید.
+              </p>
+              <button
+                type="button"
+                class="text-[#F0AE2C] gap-2 bg-[#403E39] hover:scale-95 hover:bg-[#3b3b39] focus:ring-4 focus:outline-none w-full focus:ring-[#d19726]/50 font-medium rounded-xl text-xl px-4 py-3 text-center inline-flex justify-center items-center me-2 mb-2"
+              >
+                <i class="bi bi-hdd-rack pt-1"></i>
+                <a href=""> لیست سرور ها</a>
+              </button>
+            </div>
+            <div class="w-full">
+              <img
+                src="./assets/images/banner/ping.jpg"
+                class="rounded-3xl"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="bg-[#403E39] w-full py-6">
+    <footer class="bg-[#272822] w-full font-[vazir]">
       <div
-        class="container w-full mx-auto flex justify-between items-start flex-row-reverse gap-5 lg:px-24"
+        class="container text-white w-full mx-auto flex justify-between items-start flex-row-reverse gap-5 lg:px-24 border-b-2 py-5"
       >
         <div class="w-full flex flex-col gap-5 justify-start items-end">
           <div class="flex justify-center items-center gap-2">
             <h3 class="text-lg text-white">درباره ما</h3>
-            <img src="./assets/images/icons/bookmarksvg.svg" alt="" />
+            <img src="../assets/images/icons/bookmarksvg.svg" alt="" />
           </div>
           <img
-            src="./assets/images/logo.png"
-            class="w-24 h-24"
+            src="../assets/images/logo.png"
+            class="w-20 h-20"
             alt="dragon-vps"
           />
-          <p class="text-right">
+          <p class="text-right text-sm leading-6 text-[#9E9E9E]">
             ما بر این عقیده هستیم که شهرت به تنهایی کافی نیست بلکه ارائه خدمات
             با کیفیت و پشتیبانی کامل از محصولاتمان میتواند رضایت شما را جلب کند
-            و این مهمترین فاکتور در مجموعه دراگون VPS است.
+            و این مهمترین فاکتور در مجموعه دراگون وی پی اس است
           </p>
         </div>
         <div class="w-full">
-          <div class="flex justify-center items-center gap-2">
-            <h3 class="text-lg text-white">ارتباط با ما</h3>
-            <img src="./assets/images/icons/phone-footer.svg" alt="" />
+          <div class="flex flex-col items-end gap-5">
+            <div class="flex items-center">
+              <h3 class="text-lg text-white">ارتباط با ما</h3>
+              <img src="../assets/images/icons/phone-footer.svg" alt="" />
+            </div>
+            <div class="rtl text-sm">
+              <ul class="flex flex-col gap-2 text-[#9E9E9E]">
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-telegram text-lg"></i>
+                  <a href="">کانال اطلاع رسانی تلگرام</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-discord text-lg"></i>
+                  <a href="">کانال اطلاع رسانی دیسکورد</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-ticket-perforated-fill text-lg"></i
+                  ><a href="">ارسال تیکت</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-headset text-lg"></i>
+                  <a href="">پشتیبانی فنی : 07191301921</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-geo-alt-fill text-lg"></i>
+                  <a href=""
+                    >آدرس : شیراز چمران خ شهدای چوگیا، بن بست 2، پلاک294</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="w-full">
-          <div class="flex justify-center items-center gap-2">
-            <h3 class="text-lg text-white">دسترسی سریع</h3>
-            <img
-              src="./assets/images/icons/solar--login-3-bold-duotone.svg"
-              alt=""
-            />
+          <div class="flex flex-col items-end gap-5">
+            <div class="flex items-center gap-2">
+              <h3 class="text-lg text-white">دسترسی سریع</h3>
+              <i class="bi bi-grid-fill text-2xl"></i>
+            </div>
+            <div class="rtl text-sm">
+              <ul class="flex flex-col gap-2 text-[#9E9E9E]">
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-caret-left-fill text-lg"></i
+                  ><a href="">تعرفه ها</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-caret-left-fill text-lg"></i
+                  ><a href="">سرویس کاهش پینگ</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-caret-left-fill text-lg"></i
+                  ><a href="">تماس با ما</a>
+                </li>
+                <li class="hover:text-[#F0AE2C] flex gap-2 items-center">
+                  <i class="bi bi-caret-left-fill text-lg"></i
+                  ><a href="">درباره ما</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="w-full flex flex-col gap-14">
+        <div class="w-full flex flex-col items-end gap-14">
           <div class="flex justify-center items-center gap-2">
             <h3 class="text-lg text-white">نماد اعتماد</h3>
-            <img src="./assets/images/icons/verified.svg" alt="" />
+            <img src="../assets/images/icons/verified.svg" alt="" />
           </div>
-          <img class="w-40" src="./assets/images/enamad.png" alt="" />
+          <img class="w-40" src="../assets/images/enamad.png" alt="" />
         </div>
+      </div>
+      <div
+        class="flex py-2 text-sm text-white justify-center items-center h-full"
+      >
+        <span>تمامی حقوق سایت متعلق به دراگون وی پی اس میباشد</span>
       </div>
     </footer>
 
